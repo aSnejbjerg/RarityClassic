@@ -111,6 +111,7 @@ function R:PrepareDefaults()
 				width = 150,
 				height = 12,
 				scale = 1.0,
+				maxElements = 1,
 				visible = false,
 				anchor = true,
 				locked = false,

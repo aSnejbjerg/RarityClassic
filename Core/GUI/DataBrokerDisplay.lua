@@ -176,6 +176,8 @@ function GUI:UpdateText()
 	end
 	ShowTrackedItemList()
 	if true then return end
+	
+	--ALL CODE BELOW IS DEPRECATED AND IS RUN IN THE ShowTrackedItemList() FUNCTION INSTEAD
 	-- Bar 1
 	if not chance then
 		chance = 0

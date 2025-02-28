@@ -1132,6 +1132,23 @@ function R:PrepareOptions()
 									Rarity.GUI:UpdateText()
 								end,
 							},
+							elements = {
+								order = newOrder(),
+								type = "range",
+								width = "double",
+								name = L["Max Elements"],
+								min = 1,
+								max = 10,
+								step = 1,
+								get = function()
+									return self.db.profile.bar.maxElements
+								end,
+								set = function(_, val)
+									self.db.profile.bar.maxElements = val
+									Rarity.GUI:UpdateBar()
+									Rarity.GUI:UpdateText()
+								end,
+							},
 						}, -- args
 					}, -- bar
 					announcements = {

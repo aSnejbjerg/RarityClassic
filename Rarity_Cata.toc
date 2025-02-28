@@ -2,20 +2,10 @@
 ## Interface: 40401
 ## X-Min-Interface: 110007
 ## Title: Rarity
-## Version: 1.0 (@project-version@)
+## Version: 1.0 (r740-alpha)
 ## X-Curse-Project-ID: 30801
 
 ## Notes: Tracks rare drops, including companions and mounts
-## Notes-ruRU: @localization(locale="ruRU", key="Notes", namespace="ToC - Table of Contents")@
-## Notes-deDE: @localization(locale="deDE", key="Notes", namespace="ToC - Table of Contents")@
-## Notes-koKR: @localization(locale="koKR", key="Notes", namespace="ToC - Table of Contents")@
-## Notes-esMX: @localization(locale="esMX", key="Notes", namespace="ToC - Table of Contents")@
-## Notes-esES: @localization(locale="esES", key="Notes", namespace="ToC - Table of Contents")@
-## Notes-ptBR: @localization(locale="ptBR", key="Notes", namespace="ToC - Table of Contents")@
-## Notes-zhCN: @localization(locale="zhCN", key="Notes", namespace="ToC - Table of Contents")@
-## Notes-zhTW: @localization(locale="zhTW", key="Notes", namespace="ToC - Table of Contents")@
-## Notes-itIT: @localization(locale="itIT", key="Notes", namespace="ToC - Table of Contents")@
-## Notes-frFR: @localization(locale="frFR", key="Notes", namespace="ToC - Table of Contents")@
 
 ## AddonCompartmentFunc: Rarity_OnAddonCompartmentClick
 ## AddonCompartmentFuncOnEnter: Rarity_OnAddonCompartmentEnter

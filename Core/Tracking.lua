@@ -8,6 +8,7 @@ local Tracking = {}
 local R = Rarity
 -- Locals
 local trackedItemList = {}
+local trackedItemCount = 0
 local trackedItems = {}
 local lastAttemptItem
 local lastAttemptTime
@@ -134,6 +135,14 @@ function Tracking:AddTrackedItem(item)
 	if not trackedItemList[item.itemId] then
 		Rarity:Debug("Adding %s to tracked item list", itemLink or "ITEM_LINK_UNAVAILABLE")
 		trackedItemList[item.itemId] = item
+		trackedItemCount = trackedItemCount + 1
+		Rarity:Debug("Tracked item count: %s", trackedItemCount)
+		-- Rarity:Debug("Max tracked items: %s", self.db.profile.bar.maxElements)
+		-- if trackedItemCount > self.db.profile.bar.maxElements then
+			-- Rarity:Debug("Max tracked items has been exceeded, removing first one")
+			-- table.remove(trackedItemList,1)
+			-- trackedItemCount = trackedItemCount - 1
+		-- end
 		
 		Rarity:Debug("List now consists of:")
 		for k, v in pairs(trackedItemList) do
